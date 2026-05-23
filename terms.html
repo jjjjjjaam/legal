@@ -5,16 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terms of Service — bloom</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { border-bottom: 1px solid #ddd; padding-bottom: 10px; }
-  h2 { margin-top: 32px; }
-  a { color: #2a6f4e; }
+  :root {
+    --green-deep: #1f3a2e;
+    --green-darker: #16291f;
+    --bone: #f4ebd9;
+    --bone-muted: #c9bfa8;
+    --bone-faint: rgba(244, 235, 217, 0.15);
+    --accent: #d4a574;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--green-deep);
+    color: var(--bone);
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 28px 80px;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0 0 8px;
+    text-align: center;
+  }
+  .last-updated {
+    text-align: center;
+    color: var(--bone-muted);
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--bone-faint);
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 44px;
+    margin-bottom: 14px;
+    color: var(--bone);
+    letter-spacing: 0.3px;
+  }
+  p { margin: 14px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.4);
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  strong { font-weight: 600; color: var(--bone); }
+  hr {
+    border: none;
+    border-top: 1px solid var(--bone-faint);
+    margin: 48px 0 24px;
+  }
+  .footer-link {
+    text-align: center;
+    font-size: 14px;
+    color: var(--bone-muted);
+    font-style: italic;
+  }
+  @media (max-width: 600px) {
+    body { padding: 40px 20px 60px; font-size: 16px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 20px; }
+  }
 </style>
 </head>
 <body>
 
 <h1>Terms of Service</h1>
-<p>Last updated: 23 May 2026</p>
+<p class="last-updated">Last updated: 23 May 2026</p>
 
 <p>Welcome to bloom. These Terms of Service ("Terms") govern your use of the bloom mobile application ("the App"). By creating an account or using the App, you agree to be bound by these Terms. If you do not agree, please do not use the App.</p>
 
@@ -83,8 +148,8 @@
 <h2>15. Contact</h2>
 <p>For any questions about these Terms, contact us at <a href="mailto:jamesharte999@gmail.com">jamesharte999@gmail.com</a>.</p>
 
-<hr style="margin-top: 40px;">
-<p style="font-size: 14px; color: #666;">See also: <a href="privacy.html">Privacy Policy</a></p>
+<hr>
+<p class="footer-link">See also: <a href="privacy.html">Privacy Policy</a></p>
 
 </body>
 </html>
